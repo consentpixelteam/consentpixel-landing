@@ -3,51 +3,61 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <!-- UPDATE THE META DESCRIPTION -->
         <meta name="description" content="Get early access to ConsentPixel, the Shopify GDPR App that simplifies compliance for Meta, TikTok & Google ad pixels. Protect your ad performance." />
         <meta name="author" content="The ConsentPixel Team" />
-        <!-- UPDATE THE TITLE -->
         <title>ConsentPixel - Early Access | Shopify GDPR Ad Compliance</title>
-        <!-- Favicon (Optional - create an assets/favicon.ico file) -->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- (Optional) You can add a custom.css here later for more specific style changes -->
-        <!-- <link href="css/custom.css" rel="stylesheet" /> -->
+        <!-- Optional: Custom CSS for finer Mailchimp form adjustments if needed -->
+        <style>
+            /* Optional: Further fine-tune Mailchimp form if Bootstrap classes aren't enough */
+            #mc_embed_signup form {
+                padding: 0 !important; /* Override Mailchimp padding if any remains */
+                margin: 0 auto !important; /* Center the form if it's not full width */
+                text-align: left !important; /* Ensure labels are left-aligned if present */
+            }
+            #mc_embed_signup .mc-field-group label {
+                display: none !important; /* Hide Mailchimp's label as Bootstrap's floating label will be used or placeholder is enough */
+            }
+            #mc_embed_signup h2 { /* Hide Mailchimp's "Subscribe" h2 title */
+                display: none !important;
+            }
+            #mc_embed_signup .indicates-required { /* Hide "indicates required" text */
+                display: none !important;
+            }
+            #mc_embed_signup .brandingLogo { /* Hide Mailchimp branding */
+                display: none !important;
+            }
+            /* Ensure input and button take up space nicely */
+            #mc_embed_signup .mc-field-group input[type="email"] {
+                width: 100%;
+                margin-bottom: 1rem; /* Add some space below the email input */
+            }
+        </style>
     </head>
     <body>
-        <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <!-- UPDATE BRAND NAME -->
                 <a class="navbar-brand" href="#">ConsentPixel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- SIMPLIFY NAV ITEMS - Link to signup section -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#early-access-form">Get Early Access</a></li>
-                        <!-- You can remove other nav items or add more later if needed -->
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- HERO SECTION (Formerly Header) -->
         <header class="bg-dark py-5">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-7 col-xxl-6"> {/* Adjusted column width for better text flow */}
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="text-center my-5">
-                            <!-- UPDATE HEADLINE -->
                             <h1 class="display-5 fw-bolder text-white mb-2">The Shopify GDPR App That <em>Actually</em> Understands Your Ad Pixels.</h1>
-                            <!-- UPDATE SUB-HEADLINE -->
                             <p class="lead text-white-50 mb-4">Stop struggling with complicated GDPR rules that break your Meta, TikTok, and Google ad tracking. Our upcoming Shopify app simplifies consent, helping you stay compliant while <em>protecting</em> your ad performance.</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <!-- UPDATE PRIMARY CTA BUTTON - Link to signup section -->
                                 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#early-access-form">Get Early Access & 50% Off For Life</a>
-                                <!-- REMOVED SECONDARY BUTTON for simplicity -->
                             </div>
                         </div>
                     </div>
@@ -55,7 +65,6 @@
             </div>
         </header>
 
-        <!-- PROBLEM / PAIN POINTS SECTION -->
         <section class="py-5">
             <div class="container px-5 my-5">
                 <div class="row gx-5 justify-content-center">
@@ -67,22 +76,22 @@
                 </div>
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="text-center"> {/* Centering content */}
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-graph-down-arrow"></i></div> {/* Icon for breaking/underreporting */}
+                        <div class="text-center">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-graph-down-arrow"></i></div>
                             <h3 class="h5 fw-bolder">Pixels Breaking?</h3>
                             <p>Are your ad pixels breaking or underreporting due to confusing consent setups?</p>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-shield-exclamation"></i></div> {/* Icon for fines/non-compliance */}
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-shield-exclamation"></i></div>
                             <h3 class="h5 fw-bolder">Compliance Worries?</h3>
                             <p>Worried about hefty fines for non-compliance with GDPR and ePrivacy?</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-search"></i></div> {/* Icon for losing insights */}
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-search"></i></div>
                             <h3 class="h5 fw-bolder">Losing Ad Insights?</h3>
                             <p>Losing valuable ad insights because of strict consent rules, making optimization a nightmare?</p>
                         </div>
@@ -91,7 +100,6 @@
             </div>
         </section>
 
-        <!-- SOLUTION / BENEFITS SECTION (Formerly Features section) -->
         <section class="py-5 bg-light border-bottom" id="solution">
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
@@ -100,23 +108,22 @@
                 </div>
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        {/* Using text-center to center icon and text within the column */}
                         <div class="text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-rocket-takeoff"></i></div> {/* Icon for confidence */}
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-rocket-takeoff"></i></div>
                             <h3 class="h4 fw-bolder">Run Ads with Confidence</h3>
                             <p>Our smart consent ensures your pixels track compliantly without breaking your campaigns for Meta, TikTok, and Google.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-graph-up-arrow"></i></div> {/* Icon for insights/performance */}
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-graph-up-arrow"></i></div>
                             <h3 class="h4 fw-bolder">Protect & Maximize Insights</h3>
                             <p>Leverage built-in Google Consent Mode v2 to recover valuable data, even with consent choices.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="text-center">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-gear-wide-connected"></i></div> {/* Icon for easy setup */}
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-gear-wide-connected"></i></div>
                             <h3 class="h4 fw-bolder">Effortless Setup</h3>
                             <p>No more GDPR guesswork. Get clear, step-by-step guidance to set up your pixels correctly in minutes.</p>
                         </div>
@@ -125,52 +132,73 @@
             </div>
         </section>
 
-        <!-- EARLY ACCESS FORM SECTION (Formerly Contact section) -->
-        <section class="py-5" id="early-access-form"> {/* Changed background from bg-light to default, added ID */}
-            <div class="container px-5 my-5"> {/* Removed extra px-5 from container */}
+        <section class="py-5" id="early-access-form">
+            <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-gift"></i></div> {/* Changed icon and color for offer */}
+                    <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-gift"></i></div>
                     <h2 class="fw-bolder">Get Early Access & 50% Off For Life!</h2>
                     <p class="lead mb-0">We're putting the finishing touches on ConsentPixel. Sign up now to be among the first to use it and lock in your lifetime discount!</p>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
-                        <!-- EMAIL CAPTURE FORM -->
-                        <!-- Replace this whole <form> block with your Mailchimp/ConvertKit embed code -->
-                        <!-- Placeholder for Mailchimp/ConvertKit Form: -->
-                        <div id="email-form-placeholder" style="border: 2px dashed #ccc; padding: 20px; text-align:center;">
-                            <p class="fw-bold">YOUR EMAIL SIGNUP FORM WILL GO HERE</p>
-                            <p><small>(Sign up for a free Mailchimp or ConvertKit account, create an embedded signup form, and paste the HTML code here, replacing this placeholder div.)</small></p>
-                            <p class="mt-3">Example of a simple manual form (less ideal):</p>
-                            <form>
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="early_access_email" type="email" placeholder="name@example.com" required />
-                                    <label for="early_access_email">Email address</label>
-                                </div>
-                                <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Notify Me & Secure My Discount!</button></div>
-                            </form>
+                        <!-- Mailchimp Signup Form - Modified for Bootstrap Styling -->
+                        <div id="mc_embed_shell">
+                          <!-- We will remove Mailchimp's default CSS link and style block by commenting them out or deleting.
+                               Bootstrap and our custom styles below will handle it.
+                          <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+                          <style type="text/css">
+                                #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+                          </style>
+                          -->
+                          <div id="mc_embed_signup">
+                              <form action="https://gmail.us3.list-manage.com/subscribe/post?u=60afa638e6675b8856e41f321&id=1aebdf4cc6&f_id=000520e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                  <div id="mc_embed_signup_scroll">
+                                      <!-- Hiding Mailchimp's h2 and indicates-required
+                                      <h2>Subscribe</h2>
+                                      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                      -->
+                                      <div class="mc-field-group">
+                                          <!-- Hiding Mailchimp's label
+                                          <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                          -->
+                                          <input type="email" name="EMAIL" class="required email form-control form-control-lg" id="mce-EMAIL" required="" value="" placeholder="Enter your email address">
+                                      </div>
+                                      <div id="mce-responses" class="clear foot">
+                                          <div class="response" id="mce-error-response" style="display: none;"></div>
+                                          <div class="response" id="mce-success-response" style="display: none;"></div>
+                                      </div>
+                                      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                          <input type="text" name="b_60afa638e6675b8856e41f321_1aebdf4cc6" tabindex="-1" value="">
+                                      </div>
+                                      <div class="optionalParent">
+                                          <div class="clear foot d-grid"> <!-- Added d-grid for Bootstrap button to take full width -->
+                                              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg" value="Notify Me & Secure My Discount!">
+                                              <!-- Hiding Mailchimp Branding
+                                              <p style="margin: 0px auto;"><a href="http://eepurl.com/jgi2Go" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                                              -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                          <!-- Mailchimp validation script - keep this if you want their validation, otherwise Bootstrap's `required` attribute also works -->
+                          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                          <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email'; /* you can remove other fnames/ftypes if not used */ }(jQuery));var $mcj = jQuery.noConflict(true);</script>
                         </div>
-                        <!-- End of Placeholder -->
+                        <!-- End Mailchimp Form -->
                         <p class="text-center mt-3"><small>We hate spam too. You'll only hear from us about ConsentPixel.</small></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-5">
-                <!-- UPDATE FOOTER TEXT -->
                 <p class="m-0 text-center text-white">© <script>document.write(new Date().getFullYear())</script> ConsentPixel</p>
                 <p class="m-0 text-center text-white-50 small">Helping Shopify stores with GDPR ad compliance for pixels.</p>
             </div>
         </footer>
 
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS (currently empty, but link it if you add custom JS to js/scripts.js)-->
-        <!-- <script src="js/scripts.js"></script> -->
-        <!-- SB Forms JS (REMOVE this if not using Start Bootstrap's form solution) -->
-        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </body>
 </html>
